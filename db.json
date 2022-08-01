@@ -1,0 +1,39 @@
+{
+  "pacientes": [
+    {
+      "nombreCirugia": "carlos",
+      "cirujanoCirugia": "campero",
+      "id": 6
+    },
+    {
+      "nombreCirugia": "rosario",
+      "cirujanoCirugia": "serrano",
+      "id": 8
+    },
+    {
+      "nombreCirugia": "elefante",
+      "cirujanoCirugia": "blanco",
+      "id": 9
+    },
+    {
+      "nombreCirugia": "paola lemes",
+      "cirujanoCirugia": "estrada luis",
+      "id": 10
+    },
+    {
+      "nombreCirugia": "eliana",
+      "cirujanoCirugia": "serrano",
+      "id": 11
+    },
+    {
+      "nombreCirugia": "juan",
+      "cirujanoCirugia": "hhhh",
+      "id": 12
+    },
+    {
+      "nombreCirugia": "dd",
+      "cirujanoCirugia": "ddd",
+      "id": 13
+    }
+  ]
+}

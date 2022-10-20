@@ -15,6 +15,7 @@ import EditarCirugia from "./components/cirugias/EditarCirugia";
 function App() {
   const [cirugias,setCirugias]= useState([]);
   const [recargarCirugias,setRecargarCirugias]= useState (true);
+ 
 
   useEffect(()=>{
     //llamar api-buscar arreglo de datos
@@ -27,7 +28,7 @@ function App() {
   const consultarAPI = async() =>{
     try{
       //get operacion
-      const respuesta = await fetch ("http://localhost:4000/pacientes")
+      const respuesta = await fetch("http://localhost:4000/pacientes")
       console.log(respuesta);
      
       const resultado = await respuesta.json(); 
@@ -45,17 +46,31 @@ function App() {
     <Router>
       <Header></Header>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/"   >
           <Inicio></Inicio>
         </Route>
-        <Route  exact path='/cirugias'>
+        <Route  exact path="/cirugias"  >
           <ListarCirugias cirugias={cirugias} setRecargarCirugias={setRecargarCirugias}></ListarCirugias>
         </Route>
-        <Route  exact path='/cirugias/nuevo'>
+        <Route  exact path="/cirugias/nuevo">
           <AgregarCirugia setRecargarCirugias={setRecargarCirugias}></AgregarCirugia>
         </Route>
-        <Route  exact path='/cirugias/editar' > <EditarCirugia></EditarCirugia>   
+        <Route  exact path="/cirugias/editar/:id"  render={(props)=>{
+          //tomar id de la ruta
+          const parametro = parseInt(props.match.params.id)
+          console.log(parametro);
+
+          //buscar el producto a editar en array producto
+          const cirugiaBuscado = cirugias.find((item)=> item.id === parametro)
+          console.log(cirugiaBuscado);
+
+          //retorno o dibujo el componente editar producto
+          return  <EditarCirugia cirugia={cirugiaBuscado} setRecargarCirugias={setRecargarCirugias}></EditarCirugia>
+
+        }}>
+         
         </Route> 
+        
       </Switch>
       <Footer></Footer>
     </Router>

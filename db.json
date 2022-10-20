@@ -1,29 +1,9 @@
 {
   "pacientes": [
     {
-      "nombreCirugia": "carlos",
-      "cirujanoCirugia": "campero",
-      "id": 6
-    },
-    {
-      "nombreCirugia": "rosario",
-      "cirujanoCirugia": "serrano",
-      "id": 8
-    },
-    {
-      "nombreCirugia": "elefante",
-      "cirujanoCirugia": "blanco",
-      "id": 9
-    },
-    {
-      "nombreCirugia": "paola lemes",
-      "cirujanoCirugia": "estrada luis",
+      "nombreCirugia": "Nicolas Sam",
+      "cirujanoCirugia": "Rosario Serrano",
       "id": 10
-    },
-    {
-      "nombreCirugia": "eliana",
-      "cirujanoCirugia": "serrano",
-      "id": 11
     },
     {
       "nombreCirugia": "juan",
@@ -31,9 +11,29 @@
       "id": 12
     },
     {
-      "nombreCirugia": "dd",
-      "cirujanoCirugia": "ddd",
+      "nombreCirugia": "pp",
+      "cirujanoCirugia": "ppp",
       "id": 13
+    },
+    {
+      "nombreCirugia": "eeee",
+      "cirujanoCirugia": "eeee",
+      "id": 14
+    },
+    {
+      "nombreCirugia": "walter pajero",
+      "cirujanoCirugia": "deña nues",
+      "id": 15
+    },
+    {
+      "nombreCirugia": "iii",
+      "cirujanoCirugia": "iii",
+      "id": 16
+    },
+    {
+      "nombreCirugia": "juan sarapio",
+      "cirujanoCirugia": "juan sarapio",
+      "id": 17
     }
   ]
 }

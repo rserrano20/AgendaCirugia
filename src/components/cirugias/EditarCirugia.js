@@ -7,9 +7,12 @@ import { withRouter } from 'react-router-dom';
 
 const EditarCirugia = (props)=> {
   //generar los ref
+  const [error,setError] = useState(false);
+
   const nombreCirugiaRef = useRef("");
   const cirujanoCirugiaRef = useRef("");
-  const [error,setError] = useState(false);
+  console.log('aqui----',props.cirugia.nombreCirugia);
+  
 
   const handleSubmit = async(e)=> {
   e.preventDefault();
@@ -27,8 +30,8 @@ const EditarCirugia = (props)=> {
    //enviar cirugia a modificar a mi api
   //creo objeto
   const cirugiaModificada = {
-    nombreCirugia: nombreCirugiaRef.current.value,
-    cirujanoCirugia: cirujanoCirugiaRef.current.value
+    nombreCirugia:nombreCirugiaRef.current.value,
+    cirujanoCirugia:cirujanoCirugiaRef.current.value
   }
   try{
     const consulta = await fetch(`http://localhost:4000/pacientes/${props.cirugia.id}`,
@@ -47,7 +50,7 @@ const EditarCirugia = (props)=> {
         'se modifico  correctamente!',
         'success'
       ) 
-      props.history.push("/cirugias");
+      props.history.push("/cirugias")
     }
 
   } catch(msjError){
@@ -70,6 +73,7 @@ const EditarCirugia = (props)=> {
             type="text"
             ref={nombreCirugiaRef}
             defaultValue={props.cirugia.nombreCirugia}
+
              />
         </Form.Group>
         <Form.Group className="mb-3" controlId="agendaId">
@@ -83,7 +87,7 @@ const EditarCirugia = (props)=> {
         </Form.Group>
         
         <Button variant="primary" type="submit" className="">
-          Guardar
+          Guardar cirugia
         </Button>
       </Form>
     </div>

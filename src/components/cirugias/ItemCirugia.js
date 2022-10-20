@@ -51,7 +51,7 @@ const ItemCirugia = (props) => {
     return (
         <ListGroup.Item className='d-flex justify-content-between'>
             <p>
-            {props.cirugia.nombrePaciente}{" "}
+            {props.cirugia.nombreCirugia}{" "}
             <span className="font-weight-bold">{props.cirugia.cirujanoCirugia}</span> 
             </p>
             <div>

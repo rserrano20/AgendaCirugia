@@ -30,7 +30,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className="py-1">
-            <Link to="error404/error" className="text-light">
+            <Link to="/contacto" className="text-light">
               Contacto
             </Link>
           </li>

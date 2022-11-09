@@ -8,6 +8,7 @@ import Inicio from './components/principal/Inicio';
 import AgregarCirugia from "./components/cirugias/AgregarCirugia";
 import ListarCirugias from "./components/cirugias/ListarCirugias";
 import EditarCirugia from "./components/cirugias/EditarCirugia";
+import Contacto from "./components/principal/Contacto";
 
 
 
@@ -48,6 +49,9 @@ function App() {
       <Switch>
         <Route exact path="/"   >
           <Inicio></Inicio>
+        </Route>
+        <Route exact path="/contacto"   >
+          <Contacto></Contacto>
         </Route>
         <Route  exact path="/cirugias"  >
           <ListarCirugias cirugias={cirugias} setRecargarCirugias={setRecargarCirugias}></ListarCirugias>

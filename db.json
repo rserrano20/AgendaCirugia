@@ -1,19 +1,14 @@
 {
   "pacientes": [
     {
-      "nombreCirugia": "Nicolas Sam",
-      "cirujanoCirugia": "Rosario Serrano",
+      "nombreCirugia": "rosario serrano",
+      "cirujanoCirugia": "Rosario pedraja",
       "id": 10
     },
     {
       "nombreCirugia": "juan",
       "cirujanoCirugia": "hhhh",
       "id": 12
-    },
-    {
-      "nombreCirugia": "pp",
-      "cirujanoCirugia": "ppp",
-      "id": 13
     },
     {
       "nombreCirugia": "eeee",
@@ -34,6 +29,11 @@
       "nombreCirugia": "juan sarapio",
       "cirujanoCirugia": "juan sarapio",
       "id": 17
+    },
+    {
+      "nombreCirugia": "juan servero",
+      "cirujanoCirugia": "silvioo rodriguez",
+      "id": 18
     }
   ]
 }
